@@ -7,9 +7,9 @@ body {
 }
 
 :root {
-    --primary-color: #cbefb6;
+    --primary-color: #9c1e20;
     --secondary-color: #635d5c;
-    --accent1-color: #d0ffce;
+    --accent1-color: #181b18;
     --accent2-color: #2e2b3d;
 
     --heading-font: 'Lato', sans-serif;
@@ -23,7 +23,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 header {
