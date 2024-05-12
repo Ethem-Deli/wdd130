@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --main-color: #007bff;
+    --text-color: #333;
+}
+
+body {
+    font-family: var(--paragraph-font), sans-serif;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--main-color);
+}
+
+header img {
+    height: 50px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display:block;
+    width: 100%;
+    height: auto;
+}
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero article {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero article img {
+    float: right;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+
+.hero article p {
+    color: white;
+}
+
+section {
+    padding: 20px;
+}
+
+section h2 {
+    color: var(--main-color);
+}
+
+footer {
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+footer img:hover {
+    opacity: 0.7;
+}
