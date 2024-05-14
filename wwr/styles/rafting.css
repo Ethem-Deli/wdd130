@@ -45,29 +45,30 @@ main {
 }
 .hero h1 {
     position: absolute;
-    top: 50%;
+    top: 5%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
     font-size: 2.5em;
     text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero article {
     position: absolute;
-    top: 70%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
+    width:80%;
 }
 
 .hero article img {
     float: right;
     margin-left: 20px;
     border-radius: 50%;
+    width: 100px;
 }
 
 .hero article p {
