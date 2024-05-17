@@ -5,16 +5,27 @@
 }
 nav {
     background-color: steelblue;
-    padding: 10px;
+    padding: 1rem; /*changed from 10px*/
+    display: flex;/* this line added*/
+    align-items: center;/* this line added*/
+    justify-content: space-evenly;/* this line added*/
+
 }
+
 nav a {
-    color: white;
     display: block;
-    padding: 20px;
+    padding: 0.5rem;/*changed from 20px*/
+    text-decoration: none;/* this line added*/
+    font-size: 1.2rem;/* this line added*/
+    font-weight: 700;/* this line added*/
+    color: #fff; /*this line added*/
 }
+
 h1 {
     color: steelblue;
+    border-bottom: 1 px solid steelblue;
 }
+
 main img {
     float: right;
     width: 150px;
@@ -23,9 +34,13 @@ main img {
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
+
 main{
-    max-width: 840px;
+    max-width: 840px;/* might delete this line*/
+    grid-column: 2/3;/*this line added*/
+    margin: 1rem;/*this line added*/
 }
+
 aside {
     width: 20rem;
     margin: 1rem;
@@ -35,17 +50,24 @@ aside {
     color: #333;
     text-align: center;
     position: relative;
+    grid-row: 1/2; /*this line added*/
 }
+
 aside img {
     width: 200px;
     height: auto;
 }
+
 aside h2 {
     position: absolute;
     top: 47px;
     left: 150px;
 }
-p { padding: 0;}
+
+p { 
+    padding: 0;
+}
+
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
@@ -70,4 +92,14 @@ aside {
     color: #333;
     text-align: center;
     position: relative;
+}
+
+.grid {
+    display: grid;/*this line added*/
+    align-items: center;/*this line added*/
+}
+
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
 }
