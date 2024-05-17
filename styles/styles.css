@@ -83,17 +83,6 @@ footer {
     color: navy; /* example color */
 }
 
-aside {
-    width: 20rem;
-    margin: 1rem; /* removed duplication */
-    border: 1px solid rgba(0, 0, 0, 0.2); /* removed duplication */
-    padding: 1rem; /* removed duplication */
-    background-color: #eee;
-    color: #333;
-    text-align: center;
-    position: relative;
-}
-
 header, footer, .grid {
     margin: 0 auto;
     max-width: 840px;
