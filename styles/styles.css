@@ -92,3 +92,21 @@ header, footer, .grid {
     display: grid;/*this line added*/
     align-items: center;/*this line added*/
 }
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+      'a b c'
+      'd e f'
+      'g h i'
+      'j j j '; /* The 10th item spans three columns */
+    grid-gap: 2px; /* Adjust as needed */
+  }
+  
+  .grid-item {
+    background-color: lightblue; /* Example background color */
+    padding: 10px; /* Example padding */
+  }
+  
+  .large {
+    grid-template-columns: 3; /* The 10th item spans three columns */
+  }  
