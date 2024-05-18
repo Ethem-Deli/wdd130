@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #471efc;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: #bebbbb;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+    margin-bottom: 20px;    
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea,
+select,
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #f50a0a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #35ec35;
+}
+
+button[type="submit"]:disabled {
+    background-color: #ff0000;
+    cursor: not-allowed;
+}
+
+.warning-message {
+    color: red;
+    font-weight: bold;
+    display: none;
+    margin-top: 10px;
+}
+
+form:invalid .warning-message {
+    display: block;
+}
+
+input:invalid + .warning-message,
+textarea:invalid + .warning-message,
+select:invalid + .warning-message {
+    display: block;
+}   
+
+input:required:valid + .warning-message,
+textarea:required:valid + .warning-message,
+select:required:valid + .warning-message {
+    display: none;
+}
