@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: 'Lato', sans-serif; /* Change font-family */
+    font-family: 'Lato', sans-serif;
     color: var(--text-color);
     margin: 0;
     padding: 0; 
@@ -38,48 +38,6 @@ main {
     padding: 20px;
 }
 
-.hero {
-    position: relative;
-}
-
-.hero img {
-    display:block;
-    width: 100%;
-    height: auto;
-}
-
-.hero h1 {
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 2.5em;
-    text-align: center;
-}
-
-.hero article {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-    width:80%;
-}
-
-.hero article img {
-    float: right;
-    margin-left: 20px;
-    border-radius: 50%;
-    width: 100px;
-}
-
-.hero article p {
-    color: white;
-}
-
 section {
     padding: 20px;
     display: flex;
@@ -104,12 +62,12 @@ figcaption {
 footer {
     background-color: var(--main-color);
     color: white;
-    text-align: center; /* Center align text */
+    text-align: center;
     padding: 20px;
     display: flex;
-    justify-content: center; /* Center align items horizontally */
+    justify-content: center;
     align-items: center;
-    flex-direction: column; /* Align items vertically */
+    flex-direction: column;
 }
 
 footer img {
