@@ -109,7 +109,7 @@ footer {
     display: flex;
     justify-content: center; /* Center align items horizontally */
     align-items: center;
-    flex-direction: column; /* Aligne items vertically */
+    flex-direction: column; /* Align items vertically */
 }
 
 footer img {
