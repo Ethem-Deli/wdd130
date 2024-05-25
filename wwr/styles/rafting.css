@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
 :root {
     --main-color: #007bff;
     --text-color: black;
 }
 
 body {
-    font-family: var(--paragraph-font), sans-serif;
+    font-family: 'Lato', sans-serif; /* Change font-family */
     color: var(--text-color);
     margin: 0;
     padding: 0; 
@@ -15,7 +13,6 @@ body {
 header {
     display: grid;
     grid-template-columns: auto 1fr;
-    /*justify-content: space-between;/*remove*/
     align-items: center;
     padding: 20px;
     background-color: var(--main-color);
@@ -50,6 +47,7 @@ main {
     width: 100%;
     height: auto;
 }
+
 .hero h1 {
     position: absolute;
     top: 5%;
@@ -106,16 +104,17 @@ figcaption {
 footer {
     background-color: var(--main-color);
     color: white;
-    text-align: center;
+    text-align: center; /* Center align text */
     padding: 20px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center; /* Center align items horizontally */
     align-items: center;
+    flex-direction: column; /* Aligne items vertically */
 }
 
 footer img {
     width: 30px;
-    margin: 0 10px;
+    margin: 10px;
 }
 
 footer img:hover {
