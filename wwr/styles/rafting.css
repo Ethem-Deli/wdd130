@@ -1,6 +1,6 @@
 :root {
     --main-color: #09406c;
-    --text-color: black;
+    --text-color: #000000; /* Changed text color to white for better contrast */
 }
 
 body {
@@ -20,7 +20,9 @@ header {
 }
 
 header img {
-    height: 50px;
+    width: auto;
+    height: 200px;
+    max-width: 800px
 }
 
 nav a {
@@ -37,6 +39,7 @@ main {
 /* Section Styles */
 section {
     padding: 20px;
+    text-align: center; /* Center align content */
 }
 
 section h2 {
@@ -44,9 +47,10 @@ section h2 {
 }
 
 section img {
-    max-width: 100%; /* Adjusted width for better responsiveness */
-    margin: 0 auto; /* Center images */
-    display: block; /* Ensure images don't affect surrounding content */
+    width: 100vw; /* Set width to 100% of the viewport width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center horizontally */
+    display: block;
 }
 
 /* Footer Styles */
