@@ -12,8 +12,8 @@ body {
 
 /* Header Styles */
 header {
-    display: grid;
-    grid-template-columns: auto 1fr;
+    display: flex; /* Changed to flex for simpler layout */
+    justify-content: space-between; /* Align logo and navigation to opposite ends */
     align-items: center;
     padding: 20px;
     background-color: var(--main-color);
@@ -21,12 +21,6 @@ header {
 
 header img {
     height: 50px;
-}
-
-nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
 }
 
 nav a {
@@ -43,8 +37,6 @@ main {
 /* Section Styles */
 section {
     padding: 20px;
-    display: flex;
-    flex-direction: column;
 }
 
 section h2 {
@@ -52,15 +44,9 @@ section h2 {
 }
 
 section img {
-    width: 100%;
-    margin: 5px;
-}
-
-/* Figure Caption Styles */
-figcaption {
-    text-align: center;
-    margin-top: 5px;
-    color: black;
+    max-width: 100%; /* Adjusted width for better responsiveness */
+    margin: 0 auto; /* Center images */
+    display: block; /* Ensure images don't affect surrounding content */
 }
 
 /* Footer Styles */
@@ -78,6 +64,7 @@ footer {
 footer img {
     width: 30px;
     margin: 10px;
+    transition: opacity 0.3s ease; /* Added transition effect */
 }
 
 footer img:hover {
@@ -86,24 +73,24 @@ footer img:hover {
 
 /* Table Styles */
 .table-container {
-    overflow-x: auto; /* Add overflow-x property for horizontal scrolling */
+    overflow-x: auto;
 }
 
 .trip-table table {
-    width: 100%; /* Adjust table width to fill container */
+    width: 100%;
     border-collapse: collapse;
 }
 
 .trip-table th, .trip-table td {
-    padding: 8px; /* Add padding to table cells */
+    padding: 8px;
     text-align: left;
 }
 
 .trip-table th {
-    background-color: var(--main-color); /* Change background color of header row */
+    background-color: var(--main-color);
     color: white;
 }
 
 .trip-table tbody tr:nth-child(even) {
-    background-color: #f2f2f2; /* Alternate row background color */
+    background-color: #f2f2f2;
 }
