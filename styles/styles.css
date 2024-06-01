@@ -89,7 +89,7 @@ footer {
 }
 
 /* Class Selectors */
-header, footer , .grid {
+header, footer {
     margin: 0 auto;
     max-width: 840px;
 }
@@ -97,4 +97,6 @@ header, footer , .grid {
 .grid {
     display: grid;
     align-items: center;
+    margin: 0 auto; 
+    max-width: 840px;
 }
