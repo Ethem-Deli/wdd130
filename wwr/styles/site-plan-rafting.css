@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-body {
-    font-family: var(--paragraph-font), sans-serif;
-    max-width: 960px;
-    padding: 20px;
-}
-
 :root {
     --primary-color: #9c1e20;
     --secondary-color: #635d5c;
@@ -19,6 +13,12 @@ body {
     --nav-link-color: #333333;
     --nav-hover-link-color: #000000;
     --nav-hover-background-color: #cccccc;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -43,15 +43,16 @@ nav {
 
 nav a {
     display: block;
-    color: var(--nav-hover-link-color);
     text-decoration: none;
     padding: 1rem;
 }
 
+/* LVHA order for link states */
 nav a:link, nav a:visited {
     color: var(--nav-link-color);
 }
 
 nav a:hover {
-    color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
 }
