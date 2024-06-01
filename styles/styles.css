@@ -87,6 +87,7 @@ footer {
 .large {
     grid-template-columns: repeat(3, 1fr); /* Specifies three columns with equal width */
 }
+
 /* Adjustments */
 header, footer {
     margin: 0 auto;
